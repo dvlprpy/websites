@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../img/Sign Up icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../assesst/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <form  action="" method="" class="container" id="stepper-form-container">
+        <h1>Register</h1>
+        <div class="step-one-info show-info">
+            <div class="step-1 share">
+                <i class="fa fa-user-o"></i>
+                <input type="text" class="inputTag" name="" placeholder="" id="fn">
+                <label for="fn" class="floating-label">FirstName</label>
+            </div>
+            <div class="step-2 share">
+                <i class="fa fa-user-o"></i>
+                <input type="text" class="inputTag" name="" placeholder="" id="ln">
+                <label for="ln" class="floating-label">LastName</label>
+            </div>
+        </div>
+        <div class="step-tow-info show-info">
+            <div class="step-3 share">
+                <i class="fa fa-user"></i>
+                <input type="text" class="inputTag" name="" placeholder="" id="un">
+                <label for="un" class="floating-label">UserName</label>
+            </div>
+            <div class="step-4 share">
+                <i class="fa fa-lock"></i>
+                <input type="password" class="inputTag" name="" placeholder="" id="p">
+                <label for="p" class="floating-label">Password</label>
+            </div>
+        </div>
+        <div class="step-three-info show-info">
+            <div class="step-5 share">
+                <i class="fa fa-envelope"></i>
+                <input type="email" class="inputTag" name="" placeholder="" id="ema">
+                <label for="ema" class="floating-label">Email</label>
+            </div>
+            <div class="step-6 share">
+                <i class="fa fa-mobile-phone phone"></i>
+                <input type="text" class="inputTag" name="" id="pn" placeholder="" pattern="[0-9]{11}">
+                <label for="pn" class="floating-label">Phone Number</label>
+            </div>
+        </div>
+        <div class="step-four-info show-info">
+            <div class="step-7 share">
+                <i class="fa fa-birthday-cake"></i>
+                <input type="text" class="inputTag" name="" id="bd" placeholder=""/>
+                <label for="bd" class="floating-label">Birthday</label>
+            </div>
+        </div>
+        <div class="stepper-button">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+        <div class="button-nxt-prv">
+            <button type="submit" class="prv" id="nextBtn">next</button>
+            <!-- <button type="submit" class="nxt" id="previousBtn" onclick="stepperForm(-1)">previous</button> -->
+        </div>
+    </form>
+    
+
+    <script src="./script.js"></script>
+</body>
+</html>

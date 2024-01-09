@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="../img/login page faveicon.jpeg" type="image/x-icon">
+    <link rel="stylesheet" href="../assesst/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="picture"></div>
+        <div class="inputs">
+            <h1>Login</h1>
+            <div class="usname ts">
+                <i class="fa fa-user-circle"></i>
+                <input type="text" name="usnm" id="usn" value="" placeholder=""> 
+                <label for="usn" class="floating-label">username</label>
+            </div>
+
+            <div class="pass ts">
+                <i class="fa fa-lock" style="font-size: 20px;"></i>
+                <input type="password" name="pass" id="pa" value="" placeholder="">
+                <label for="pa" class="floating-label">password</label>
+                <i class="fa fa-eye-slash" id="eye-slash" onclick="showPass()"></i>
+            </div>
+            <div class="remember">
+                <input type="checkbox" name="" id="rmbr">
+                <label for="rmbr">Remember me!</label>
+            </div>
+            <div class="loggin-with">
+                <span class="loggin-with-text">
+                    <span class="loggin-with-text-sign">Or Sign in with:</span>
+                    <ul class="social-account">
+                        <li><img src="../img/facebook_icon.jpeg" alt=""></li>
+                        <li><img src="../img/Gmail_icon.png" alt=""></li>
+                        <li><img src="../img/linkedin_icon.png" alt=""></li>
+                        <li><img src="../img/Twitter_icon.png" alt=""></li>
+                    </ul>
+                </span>
+            </div>
+            <div class="button">
+                <button type="submit">Sign in</button>
+                <button type="submit">Sign up</button>
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

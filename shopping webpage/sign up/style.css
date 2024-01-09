@@ -1,0 +1,115 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: auto;
+    height: auto;
+    box-shadow: 1px 1px 6px #bdc3c7, -1px -1px 6px #bdc3c7;
+    padding: 50px;
+    margin-top: 20px;
+}
+.container h1{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    padding: 20px;
+}
+.container .share{
+    position: relative;
+}
+input{
+    padding: 5px 30px 5px 30px;
+    width: 40rem;
+    margin-top: 10px;
+}
+i{
+    position: absolute;
+    left: 5px;
+    top: 14px;
+    color: blue;
+}
+i.phone{
+    font-size: larger;
+}
+label{
+    position: absolute;
+    top: 15px;
+    left: 33px;
+    color: #7f8c8d;
+    cursor: text;
+    transition: 0.2s all ease-in-out;
+    font-size: small;
+}
+input:focus + label{
+    transform: translateY(-15px);
+    background-color: white;
+    color: black;
+}
+input:not(:placeholder-shown) + label{
+    transform: translateY(-15px);
+    background-color: white;
+    color: black;
+}
+input:placeholder-shown + label{
+    transform: translateY(1px);
+    color: grey;
+    background-color: transparent;
+}
+.button-nxt-prv{
+    display: flex;
+    justify-content: center;
+}
+.button-nxt-prv button{
+    background-color: #2ecc71;
+    color: white;
+    font-weight: bolder;
+    font-size: larger;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.prv{
+    
+}
+/* input.invalid{
+    border: 2px solid red;
+    background-color: #ffdddd;
+}
+.stepper-button{
+    display: flex;
+    justify-content: center;
+}
+.stepper-button .dot{
+    height: 10px;
+    width: 10px;
+    margin: 5px 1px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+.stepper-button .active{
+    opacity: 1;
+}
+.stepper-button .finish{
+    background-color: #04AA6D;
+} */
+@media screen and (max-width:660px) {
+    input{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+}

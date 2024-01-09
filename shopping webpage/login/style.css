@@ -1,0 +1,191 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.container{
+    display: flex;
+    transform: translateY(50px);
+    width: 60rem;
+    height: auto;
+    box-shadow: 1px 1px 5px #bdc3c7, -1px -1px 5px #bdc3c7;
+    border-radius: 5px;
+}
+div.picture, div.inputs{
+    flex-grow: 1;
+}
+div.picture{
+    background-image: url(../img/login\ page\ picture.jpg);
+    width: 50%;
+}
+div.inputs{
+    width: 50%;
+}
+div.inputs h1{
+    text-align: center;
+    margin-top: 20px;
+}
+div.ts{
+    margin: 1rem 0.5rem;
+    display: flex;
+    position: relative;
+}
+div.ts input{
+    padding-left: 1.5rem;
+}
+input{
+    width: 15rem;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid blue;
+}
+label.floating-label{
+    position: absolute;
+    top: 9px;
+    left: 40px;
+    color: #7f8c8d;
+    cursor: text;
+    transition: 0.2s all ease-in-out;
+}
+input:focus + label.floating-label{
+    transform: translateY(-20px);
+    background-color: white;
+    color: black;
+}
+input:focus + label,
+input:not(:placeholder-shown) + label{
+    transform: translateY(-20px);
+    background-color: white;
+    color: black;
+}
+input:focus + label,
+input:placeholder-shown + label{
+    transform: translateY(3px);
+    color: grey;
+}
+.fa{
+    position: relative;
+    color: blue;
+}
+.fa-user-circle{
+    top: 12px;
+    left: 20px;
+}
+.fa-lock{
+    top: 12px;
+    left: 20px;
+}
+.fa-eye-slash{
+    top: 8px;
+    right: 20px;
+    /* border: 1px solid blue; */
+    cursor: pointer;
+}
+.fa-eye{
+    top: 8px;
+    right: 20px;
+    /* border: 1px solid blue; */
+    cursor: pointer;
+}
+div.remember{
+    text-align: left;
+    /* margin: 0;
+    padding: 0; */
+}
+div.remember input{
+    width: 1rem;
+    margin-left: 1rem;
+}
+.button{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background-color: #2ecc71;
+    width: 7rem;
+    height: 3rem;
+    border: none;
+    outline: none;
+    margin: 2rem 0.5rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+}
+.loggin-with{
+    margin:30px 20px;
+    display: flex;
+}
+.loggin-with ul.social-account{
+    display: flex;
+}
+.loggin-with .loggin-with-text{
+    font-size: x-large;
+    display: flex;
+}
+.loggin-with ul.social-account li{
+    list-style-type: none;
+}
+.loggin-with ul.social-account li img{
+    width: 30px;
+    height: 30px;
+}
+.social-account img{
+    cursor: pointer;
+    margin-left: 2px;
+}
+@media screen and (max-width: 648px) {
+    .loggin-with-text{
+        display: flex;
+        flex-direction: column;
+    }
+    .loggin-with-text-sign{
+        font-size: medium;
+        margin-bottom: 7px;
+    }
+    .social-account ul li img{
+        width: 20px;
+        height: 20px;
+    }
+}
+@media screen and (max-width:462px){
+    div.picture{
+        display: none;
+    }
+    .button{
+       display: flex;
+       flex-direction: column;
+    }
+    .button button{
+        width: 100%;
+        margin-top: -20px;
+
+    }
+    .inputs input{
+        width: 20rem;
+    }
+    .loggin-with{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    .social-account{
+        justify-content: center;
+    }
+    .social-account li img{
+        width: 30px;
+        height: 30px;
+    }
+}
+/* @media screen and (max-width:368px) {
+    button{
+        display: block;
+    }
+} */

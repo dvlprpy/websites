@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Shopping Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/shopping_faveicon.jpeg" type="image/x-icon">
+</head>
+<body dir="rtl">
+    <header>
+        <div class="base_container">
+            <div class="cotainer">
+                <div class="logo">
+                    <img src="./img/shopping_logo.png" alt="">
+                </div>
+                <div class="searchbox">
+                    <input type="search" name="" id="" placeholder="جستجو...">
+                </div>
+            </div>
+            <div class="container_cart">
+                <div class="signup">
+                    <button type="submit">ورود | ثبت نام</button>
+                </div>
+                <div class="cart">
+                    <img src="./img/cart.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="navbar">
+            <div class="navbar_list_product">
+                <div class="products" onclick="showCategoryFunc()">دسته بندی کالاها</div> 
+            </div>
+            <div class="navbar_offer">
+                <span id="t1">شگفت انگیزها</span>
+                <span>سوپرمارکت</span>
+                <span>کارت هدیه</span>
+                <span>پرفروش ترین ها </span>
+                <span>تخفیف ها و پیشنهادات</span>
+                <span>انجمن</span>
+            </div>
+            <div class="navbar_loc">
+                <span class="loc">لطفا شهر خود را انتخاب کنید</span>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="picture">
+                <div class="public">
+                    <img src="./img/slider img/pc.webp" class="slider-img" alt="">
+                    <span class="text">1/3</span>
+                </div>
+                <div class="public">
+                    <img src="./img/slider img/pc2.webp" class="slider-img" alt="">
+                    <span class="text">2/3</span>
+                </div>
+                <div class="public">
+                    <img src="./img/slider img/modem.webp" class="slider-img" alt="">
+                    <span class="text">3/3</span>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="prev" type="button" onclick="nextSlider(-1)">&#10094;</button>
+                <button class="nxt" type="button" onclick="nextSlider(1)">&#10095;</button>
+            </div>
+            <div class="dotsShow" style="text-align:center">
+                <span class="dot" onclick="currentSlider(1)"></span>
+                <span class="dot" onclick="currentSlider(2)"></span>
+                <span class="dot" onclick="currentSlider(3)"></span>
+            </div>
+            <div class="container_menu_items">
+                <ul class="menu_items">
+                    <li class="category-item" data-product-code="10">موبایل</li>
+                </ul>
+                <div class="show_product_items">
+                    <ul class="product-category-item active" data-product-code="10">
+                        <div class="sm1 sm">
+                            <span class="title-product">برند های مختلف گوشی موبایل</span>
+                            <li>هواوی</li>
+                            <li>آنر</li>
+                            <li>موتورلا</li>
+                            <li>جی ال ایکس</li>
+                            <li>گوگل</li>
+                            <li>سامسونگ</li>
+                            <li>نوکیا</li>
+                            <li>آیفون</li>
+                            <li>ال جی</li>
+                            <li>وان پلاس</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+ 
+    </header>
+    <main>
+        <div class="introduction-products">
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+            <div class="profile" onclick="instaFunc()">
+                <img src="./img/man picture.jpg" alt="">
+                <span class="title">Hair Dryer</span>
+            </div>
+        </div>
+        <div class="services">
+            <h4 class="title-services">Services</h4>
+            <div class="sub-services">
+                <span class="container-sub-services">
+                    <img src="./img/3D icons/loan icon.png" class="loan" alt="">
+                    <!-- <caption>Loan</caption> -->
+                </span>
+                <span class="container-sub-services">
+                    <img src="./img/3D icons/car 3d icon.jpg" class="car" alt="">
+                    <!-- <caption>Car</caption> -->
+                </span>
+                <span class="container-sub-services">
+                    <img src="./img/3D icons/Food 3d icon.jpg" class="food" alt="">
+                    <!-- <caption>Food</caption> -->
+                </span>
+                <span class="container-sub-services">
+                    <img src="./img/3D icons/ticket 3d icon.png" alt="" class="ticket">
+                    <!-- <caption>Ticket</caption> -->
+                </span>
+                <span class="container-sub-services">
+                    <img src="./img/3D icons/doctor 3d icon.png" alt="" class="doctor">
+                    <!-- <caption>Doctor</caption> -->
+                </span>
+                <span class="container-sub-services">
+                    <img src="./img/3D icons/pharmacy 3d icon.webp" alt="" class="pharmacy">
+                    <!-- <caption>Pharmacy</caption> -->
+                </span>
+                <span class="container-sub-services">
+                    <img src="./img/3D icons/credit 3d services.jpg" alt="" class="credit-service">
+                    <!-- <caption>credit service</caption> -->
+                </span>
+            </div>
+        </div>
+
+
+        <div class="category-product-container">
+            <h4 class="title-category-product">Category Products</h4>
+            <div class="container-category-product-I">
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/smart phone 3d Icon.jpg" alt="">
+                    <!-- <caption>smart phone</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/digital device 3d icon.png" alt="">
+                    <!-- <caption>digital devices</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/kitchen 3d icon.webp" alt="">
+                    <!-- <caption>home & kitchen</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/fashion and clothing 3d icon.webp" alt="">
+                    <!-- <caption>fashion & clothing</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/hypermarket 3D icon.jpg" alt="">
+                    <!-- <caption>supermarket products</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/toy 3D icon.png" alt="">
+                    <!-- <caption>toys</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/beauty 3D icon.png" alt="">
+                    <!-- <caption>beauty & health</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/sports 3D icon.png" alt="">
+                    <!-- <caption>exercise & travel</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/tools 3D icon.png" alt="">
+                    <!-- <caption>tools</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/motorcycle 3D icon.png" alt="">
+                    <!-- <caption>car & motorcycle</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/native products 3D icon.png" alt="">
+                    <!-- <caption>native products</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/gift card 3D icon.png" alt="">
+                    <!-- <caption>gift card</caption> -->
+                </span>
+                <span class="sub-category-product-container">
+                    <img src="./img/Products 3D icons/health 3D icon.webp" alt="">
+                    <!-- <caption>health</caption> -->
+                </span>
+            </div>
+        </div>
+
+        <div class="my-offers">
+            <h4>Our Suggestion</h4>
+            <div class="suggestion">
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/smart phone.avif" alt="">
+                    <caption>smart phone</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/smart watch.webp" alt="">
+                    <caption>smart watch</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/laptop.webp" alt="">
+                    <caption>laptop</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/game console.webp" alt="">
+                    <caption>game console</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/TV.jpg" alt="">
+                    <caption>television</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/pen.ico" alt="">
+                    <caption>pen</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/book.webp" alt="">
+                    <caption>book</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/headphone.webp" alt="">
+                    <caption>headphone and headset</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/socks.webp" alt="">
+                    <caption>socks man</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/medical supplement.webp" alt="">
+                    <caption>medical supplement</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/Electric heater.png" alt="">
+                    <caption>Electric heater</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/lamp.webp" alt="">
+                    <caption>Lamps and lights</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/paper.avif" alt="">
+                    <caption>paper</caption>
+                </div>
+                <div class="sub-suggestion">
+                    <img src="./img/Suggestion/Closet.webp" alt="">
+                    <caption>Closet</caption>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+
+        <div class="instaPost">
+            <div class="info">
+                <div class="profile-picture"></div>
+                <div class="profile-id"></div>
+                <div class="follow-contact-button"></div>
+                <div class="video-product"></div>
+                <div class="title-product"></div>
+                <div class="other-icon"></div>
+                <div class="product-container-caption"></div>
+            </div>
+        </div>
+        <div class="show-product-container">
+            <div class="show-product-image"></div>
+            <div class="show-title-image-product"></div>
+            <div class="rating-product"></div>
+            <div class="color-product"></div>
+            <div class="full-product-information-button"></div>
+            <div class="cart-button"></div>
+            <div class="price-product"></div>
+            <div class="cart-container">
+                <span class="recycle-bin-icon"></span>
+                <span class="number-product"></span>
+                <span class="addition-product"></span>
+                <span class="cart-title-link">
+                    <span class="title-bascket"></span>
+                    <span class="link-cart"></span>
+                </span>
+            </div>
+        </div>
+        <div class="go-top" onclick="goToTopFunc()">
+            Top
+        </div>
+    </main>
+    <footer>
+        <hr>
+        <div class="container-footer">
+            <div class="follow-us">
+                <ul>
+                    <li><img src="./img/Social Network icon/instagram 3D icon.png" alt=""></li>
+                    <li><img src="./img/Social Network icon/linkdin 3D icon.png" alt=""></li>
+                    <li class="tm"><img src="./img/Social Network icon/telegram 3D icon.png" alt=""></li>
+                    <li><img src="./img/Social Network icon/Twitter 3D icon.webp" alt=""></li>
+                    <li><img src="./img/Social Network icon/youtube 3d icon.webp" alt=""></li>
+                </ul>
+                <span class="title-follow-us">Follow us in social network</span>
+            </div>
+            <div class="address-contact">
+                <ul class="sd">
+                    <li>home</li>
+                    <li>about</li>
+                    <li>contact us</li>
+                    <li>map</li>
+                </ul>
+                <div class="location">
+                    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=51.19869232177735%2C35.60846403133002%2C51.581840515136726%2C35.76239338462889&amp;layer=mapnik"></iframe><br/><small>
+                </div>
+                <address>
+                    Iran, Tehran province, Tehran City, Enghelab square <br>
+                    Phone: 9832226578 <br>
+                    Email: admin@admin.com
+                </address>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
